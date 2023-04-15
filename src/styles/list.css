@@ -1,0 +1,37 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    align-items: center;
+    border-bottom: 0.5px solid black;
+}
+
+.list-body {
+    background: #e7eeee;
+}
+
+.inner {
+    height: 90%;
+    overflow-y: scroll;
+}
+
+.pricelist {
+    width: 50%;
+    color: #000;
+    height: 82vh;
+    /* overflow-y: scroll; */
+    border: 0.5px solid black;
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.chart {
+    width: 40%;
+}
+
+.list-body {
+    background: #e7eeee;
+    display: flex;
+    justify-content: space-around;
+}

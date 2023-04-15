@@ -345,7 +345,12 @@ const data = [
 const Homepage = () => {
     return (
         <>
-            <div className="nav-bar">vjkbsgjkb</div>
+            <div className="nav-bar"> <div className="brand">Arcana</div> <div className="left panel">
+                <div className="icons"><a href="/list">Link</a></div>
+                <div className="icons"><a href="">List</a></div>
+                <div className="icons"><a href="">List</a></div>
+            </div>
+            </div>
             <div className='container'>
                 <div className='left-bar'> {data.map((items) => {
                     return <div className="bar">
