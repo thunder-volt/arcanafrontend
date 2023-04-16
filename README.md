@@ -9,8 +9,8 @@ yarn
 ```
 step3: in the terminal run the command 
 ```
-     yarn run dev
-     ```
+yarn run dev
+```
 1.  Market Trend Indicator - We used a decision tree classifier to build this indicator, which predicts whether the market trend is positive or negative. We used a meter to display the prediction result.
    
 2.  RSI - The Relative Strength Index (RSI) is a technical analysis indicator that measures the magnitude of recent price changes to evaluate overbought or oversold conditions. We included this indicator to help users identify potential buy or sell signals.
