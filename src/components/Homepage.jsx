@@ -1,5 +1,6 @@
 import "../styles/homepage.css";
 import React, { useState, useEffect } from 'react';
+
 // import ReactDOM from 'react-dom';
 import { Line, Scatter, RingProgress, DualAxes, Gauge, Column } from '@ant-design/plots';
 // import { ArrowUp, ArrowDown } from 'react-icons/fa';
