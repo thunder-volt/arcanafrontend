@@ -173,7 +173,7 @@ const DemoRingProgress = () => {
         width: 200,
         autoFit: false,
         percent: 0.6,
-        color: ['#5B8FF9', 'red'],
+        color: ['red', '#E8EDF3'],
     };
     return <RingProgress {...config} />;
 };

@@ -174,7 +174,7 @@ const DemoRingProgress = () => {
         width: 200,
         autoFit: false,
         percent: 0.5,
-        color: ['#5B8FF9', 'red'],
+        color: ['red', '#E8EDF3'],
     };
     return <RingProgress {...config} />;
 };
@@ -340,9 +340,7 @@ const Homepage = () => {
     return (
         <>
 
-            <div className="nav-bar"> <div className="brand">Arcana</div> <div className="left panel">
-
-            </div>
+            <div className="nav-bar"> <div className="brand">Arcana</div>
             </div>
             <div className='container'>
 
