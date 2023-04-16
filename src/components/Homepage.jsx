@@ -12,7 +12,7 @@ const DemoLine = () => {
         asyncFetch();
     }, []);
     const asyncFetch = () => {
-        fetch('http://localhost:8000/csvdata15')
+        fetch('http://ec2-13-231-143-65.ap-northeast-1.compute.amazonaws.com:8000/csvdata15')
             .then((response) => response.json())
             .then((json) => setData(json))
             .catch((error) => {
@@ -59,7 +59,7 @@ const DemoLine1 = () => {
     }, []);
 
     const asyncFetch = () => {
-        fetch('http://localhost:8000/csvdata29 ')
+        fetch('http://ec2-13-231-143-65.ap-northeast-1.compute.amazonaws.com:8000/csvdata29 ')
             .then((response) => response.json())
             .then((json) => setData(json))
             .catch((error) => {
@@ -93,7 +93,7 @@ const DemoLine1 = () => {
 //     }, []);
 
 //     const asyncFetch = () => {
-//         fetch('http://localhost:8000/csvdata')
+//         fetch('http://ec2-13-231-143-65.ap-northeast-1.compute.amazonaws.com:8000/csvdata')
 //             .then((response) => response.json())
 //             .then((json) => setData(json))
 //             .catch((error) => {
@@ -117,7 +117,7 @@ const DemoLine1 = () => {
 const DemoDualAxes = () => {
     const [csvdata, setCsvData] = useState([]);
     const csvData = async () => {
-        const result = await fetch('http://localhost:8000/csvdata').then(async (res) => {
+        const result = await fetch('http://ec2-13-231-143-65.ap-northeast-1.compute.amazonaws.com:8000/csvdata').then(async (res) => {
             console.log(res);
             let resp = await res.json();
             return resp;
@@ -323,7 +323,7 @@ const data = [
 const Homepage = () => {
     const [csvdata, setCsvData] = useState([]);
     const csvData = async () => {
-        const result = await fetch('http://localhost:8000/csvdata').then(async (res) => {
+        const result = await fetch('http://ec2-13-231-143-65.ap-northeast-1.compute.amazonaws.com:8000/csvdata').then(async (res) => {
             console.log(res);
             let resp = await res.json();
             return resp;
