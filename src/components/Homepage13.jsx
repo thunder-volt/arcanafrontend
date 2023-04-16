@@ -11,7 +11,7 @@ const DemoLine = () => {
         asyncFetch();
     }, []);
     const asyncFetch = () => {
-        fetch('http://localhost:8000/csvdata15')
+        fetch('http://localhost:8000/csvdata25')
             .then((response) => response.json())
             .then((json) => setData(json))
             .catch((error) => {
@@ -27,8 +27,8 @@ const DemoLine = () => {
             label: {
                 formatter: (v) => `${(v / 1).toFixed(1)}`,
             },
-            max: 120,
-            min: 30
+            max: 27,
+            min: 10
         },
         legend: {
             position: 'top',
@@ -58,7 +58,7 @@ const DemoLine = () => {
 //     }, []);
 
 //     const asyncFetch = () => {
-//         fetch('http://localhost:8000/csvdata')
+//         fetch('http://localhost:8000/csvdata13')
 //             .then((response) => response.json())
 //             .then((json) => setData(json))
 //             .catch((error) => {
@@ -82,7 +82,7 @@ const DemoLine = () => {
 const DemoDualAxes = () => {
     const [csvdata, setCsvData] = useState([]);
     const csvData = async () => {
-        const result = await fetch('http://localhost:8000/csvdata').then(async (res) => {
+        const result = await fetch('http://localhost:8000/csvdata13').then(async (res) => {
             console.log(res);
             let resp = await res.json();
             return resp;
@@ -160,7 +160,7 @@ const DemoGauge = () => {
                     fontSize: '36px',
                     color: '#4B535E',
                 },
-                formatter: () => '73.2%',
+                formatter: () => '70%',
             },
             content: {
                 style: {
@@ -288,7 +288,7 @@ const data = [
 const Homepage = () => {
     const [csvdata, setCsvData] = useState([]);
     const csvData = async () => {
-        const result = await fetch('http://localhost:8000/csvdata').then(async (res) => {
+        const result = await fetch('http://localhost:8000/csvdata13').then(async (res) => {
             console.log(res);
             let resp = await res.json();
             return resp;
@@ -304,7 +304,6 @@ const Homepage = () => {
     }, [])
     return (
         <>
-
             <div className="nav-bar"> <div className="brand">Arcana</div> <div className="left panel">
                 <div className="icons"><a href="/list">List</a></div>
                 <div className="icons"><a href="">List</a></div>
@@ -312,7 +311,7 @@ const Homepage = () => {
             </div>
             </div>
             <div className='container'>
-
+                <div className="title">KELYA</div>
                 <div className='left-bar'> {data.map((items) => {
                     return (
                         <a href={`${items.link}`}>
@@ -330,22 +329,20 @@ const Homepage = () => {
                     )
                 })}</div>
                 <div className='center-bar'>
-                    <div className="title">AIN</div>
                     <div className="line"><DemoLine /></div>
                     <div className="line" ><DemoDualAxes /></div>
                     {/* <div className="line" id="qwe"></div> */}
                 </div>
                 <div className='right-bar'>
                     <div className="scatter">
-                        <DemoGauge />
-                    </div>
-                    <div className="scatter">
                         <DemoRingProgress />
                     </div>
                     <div className="scatter">
                         <DemoDualAxes />
                     </div>
-
+                    <div className="scatter">
+                        <DemoGauge />
+                    </div>
                 </div>
             </div>
         </>

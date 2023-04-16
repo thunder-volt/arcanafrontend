@@ -39,185 +39,165 @@ const DemoArea = () => {
 const Lists = () => {
     const data = [
         {
-            name: "London",
-            opening: 9,
+            name: "KELYA",
+            closing: 16.81,
+            volume: 107190,
+            date: "2023-04-13",
+            price_cng: 1.326,
+            RSI: 77.87
+        },
+        {
+            name: "AIN",
+            closing: 90.97,
+            volume: 78413,
+            date: "2023-04-13",
+            price_cng: 1.11,
+            RSI: 58.64
+        },
+        {
+            name: "BIG",
+            closing: 11,
+            volume: 1658160,
+            date: "2023-04-13",
+            price_cng: 0.365,
+            RSI: 59.68
+        },
+        {
+            name: "CAKE",
+            closing: 32.79,
+            volume: 1144315,
+            date: "2023-04-13",
+            price_cng: -0.787,
+            RSI: 38.694
+        },
+        {
+            name: "DHR",
+            closing: 254.41,
+            volume: 175486,
+            date: "2023-04-13",
+            price_cng: 1.77,
+            RSI: 68.44
+        },
+        {
+            name: "ETD",
+            closing: 26.83,
+            volume: 119540,
+            date: "2023-04-13",
+            price_cng: 0.11,
+            RSI: 51.59
+        },
+        {
+            name: "FMC",
+            closing: 123.85,
+            volume: 722789,
+            date: "2023-04-13",
+            price_cng: 1.1,
+            RSI: 68.08
+        },
+        {
+            name: "GHG",
+            closing: 4.55,
+            volume: 10315,
+            date: "2023-04-13",
+            price_cng: 0,
+            RSI: 54.135
+        },
+        {
+            name: "",
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
         },
         {
             name: "London",
-            opening: 9,
             closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
-        {
-            name: "London",
-            opening: 9,
-            closing: 17,
-            percentage: 0.5,
-        },
+            volume: "hjb",
+            date: 0.5,
+            price_cng: "vhcjf",
+            RSI: "uytcyu"
+        }
     ]
 
     return (

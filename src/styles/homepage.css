@@ -6,11 +6,17 @@ body {
 .container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    /* align-items: center; */
     /* height: 100vh; */
     width: 100vw;
     padding: 0;
     margin: 0;
+}
+
+.title {
+    color: #000;
+    font-size: 30px;
+    margin-top: 10px;
 }
 
 .left.panel {
@@ -46,7 +52,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .scatter {
@@ -77,29 +83,36 @@ body {
 }
 
 .icons {
-    font-size: 25px;
+    font-size: 19px;
 }
 
 .icons a {
     cursor: pointer;
+    color: #d0d0d0;
 }
 
 .nav-bar {
     width: 100vw;
-    height: 66px;
-    background: #d3dbdb;
+    height: 50px;
+    background: #0C0404;
     justify-content: space-between;
     display: flex;
     align-items: center;
-    color: #000;
+    color: #fff;
     font-size: 38px;
     font-weight: 60;
     padding: 7px;
-    margin-bottom: 10px;
+    margin-bottom: 35px;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .price {
     justify-content: space-around;
     display: flex;
-    width: 30%;
+    width: 51%;
 }
