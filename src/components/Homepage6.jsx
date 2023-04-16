@@ -79,6 +79,40 @@ const DemoLine = () => {
 //     return <Column {...config} />;
 // };
 
+const DemoLine1 = () => {
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        asyncFetch();
+    }, []);
+
+    const asyncFetch = () => {
+        fetch('http://localhost:8000/csvdata34 ')
+            .then((response) => response.json())
+            .then((json) => setData(json))
+            .catch((error) => {
+                console.log('fetch data failed', error);
+            });
+    };
+    const config = {
+        data,
+        padding: 'auto',
+        xField: 'ds',
+        yField: 'close',
+        xAxis: {
+            // type: 'timeCat',
+            tickCount: 5,
+        },
+        smooth: true,
+        slider: {
+            start: 0.97,
+            end: 1,
+        },
+    };
+
+    return <Line {...config} />;
+};
+
 const DemoDualAxes = () => {
     const [csvdata, setCsvData] = useState([]);
     const csvData = async () => {
@@ -146,7 +180,7 @@ const DemoRingProgress = () => {
 
 const DemoGauge = () => {
     const config = {
-        percent: 0.75,
+        percent: 0.23,
         range: {
             color: 'l(0) 0:#B8E1FF 1:#3D76DD',
         },
@@ -160,7 +194,7 @@ const DemoGauge = () => {
                     fontSize: '36px',
                     color: '#4B535E',
                 },
-                formatter: () => '70%',
+                formatter: () => '23%',
             },
             content: {
                 style: {
@@ -168,7 +202,7 @@ const DemoGauge = () => {
                     lineHeight: '44px',
                     color: '#4B535E',
                 },
-                formatter: () => '加载进度',
+                formatter: () => 'Bullish',
             },
         },
     };
@@ -334,14 +368,17 @@ const Homepage = () => {
                     {/* <div className="line" id="qwe"></div> */}
                 </div>
                 <div className='right-bar'>
+                    <div className="scatter1">
+                        <div>Trend</div>
+                        <DemoGauge />
+                    </div>
                     <div className="scatter">
+                        <div>Sentiment</div>
                         <DemoRingProgress />
                     </div>
                     <div className="scatter">
-                        <DemoDualAxes />
-                    </div>
-                    <div className="scatter">
-                        <DemoGauge />
+                        <div>RSI</div>
+                        <DemoLine1 />
                     </div>
                 </div>
             </div>
