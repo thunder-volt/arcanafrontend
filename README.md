@@ -1,8 +1,8 @@
 step1: open new folder in terminal
      in terminal run the command 
-     ```
-      git clone https://github.com/thunder-volt/arcanafrontend 
-     ```
+```
+git clone https://github.com/thunder-volt/arcanafrontend 
+```
 step2: in the terminal run the command 
 ```     
 yarn 
