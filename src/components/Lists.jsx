@@ -203,9 +203,6 @@ const Lists = () => {
     return (
         <>
             <div className="nav-bar"> <div className="brand">Arcana</div> <div className="left panel">
-                <div className="icons"><a href="/list">Link</a></div>
-                <div className="icons"><a href="">List</a></div>
-                <div className="icons"><a href="">List</a></div>
             </div>
             </div>
             <div className='list-body'>
